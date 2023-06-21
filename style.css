@@ -1,0 +1,403 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.body
+{
+    background-color: rgb(224, 224, 63);
+}
+.try
+{
+    text-align: center;
+}
+.row
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+    animation: sample 3s infinite alternate;
+}
+.let
+{
+    text-align: center;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+}
+@keyframes sample 
+{
+    0%
+    {
+        transform: skew(-30deg);
+    }
+    100%
+    {
+        transform: skew(30deg);
+    }
+}
+.cross
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin: 20px;
+    animation: simple 3s infinite alternate;
+}
+.cont
+{
+    display: flex;
+    justify-content: center;
+}
+@keyframes simple
+{
+    0%
+    {
+        transform: skewY(-30deg);
+    }
+    100%
+    {
+        transform: skewY(30deg);
+    }
+}
+.root
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+    animation: stop 3s infinite normal;
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+}
+@keyframes stop
+{
+    0%
+    {
+        transform: rotate(-90deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.stem
+{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+    animation: starts 3s infinite alternate;
+}
+.leaf
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 20px;
+    animation: shown 3s infinite alternate;
+}
+.tree
+{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+    animation: stoped 3s infinite normal;
+}
+.console
+{
+    display: flex;
+    justify-content: center;
+}
+@keyframes starts
+{
+    0%
+    {
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1,2);
+    }
+}
+@keyframes shown
+{
+    0%
+    {
+        transform: scale(-1,1);
+    }
+    100%
+    {
+        transform: scale(1,1);
+    }
+}
+@keyframes stoped
+{
+    0%
+    {
+        transform: rotate(-90deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.row1:hover
+{
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row1
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.common
+{
+    display: flex;
+    justify-content: center;
+}
+.row2:hover
+{
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+    width: 300px;
+    height: 300px;
+}
+.row2
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.row3:hover
+{
+    transition-timing-function: ease;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row3
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.row4:hover
+{
+    transition-timing-function: ease-out;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row4
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.row5:hover
+{
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row5
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.row6:hover
+{
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row6
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.row7:hover
+{
+    transition-timing-function: ease-in;
+    transition-duration: 3s;
+    width: 300px;
+}
+.row7
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 20px;
+}
+.back
+{
+    text-align: center;
+}
+.next
+{
+    text-align: center;
+}
+.akhil
+{
+    display: flex;
+    justify-content: center;
+}
+.hap
+{
+    background-color: orange;
+}
+.ind
+{
+    background-color: white;
+}
+.day
+{
+    background-color: green;
+}
+.bod
+{
+
+    border: 10px solid;
+    border-color: white green white orange;
+    height: 100vh;
+    width: 97.4vw;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+.sun img
+{
+    width: 10%;
+    height: 100px;
+    margin-left: 1190px;
+    position: fixed;
+    top: 100px;
+}
+.road
+{
+    width: 500%;
+    height: 200px;
+    display: block;
+    background-image: url(./road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+    100%
+    {
+        transform: translateX(-3050px);
+    }
+}
+.city
+{
+    width: 500%;
+    height: 500px;
+    background-image: url(./city.png);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 5s linear infinite;
+}
+@keyframes city
+{
+    100%
+    {
+        transform:translateX(-2000px)
+    }
+}
+.car
+{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.flag img
+{
+    width: 200px;
+    height: 100px;
+    left: 60%;
+    top: 340px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car
+{
+    100%
+    {
+        transform: translateY(-1px);
+    }
+    50%
+    {
+        transform: translateY(1px);
+    }
+    0%
+    {
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img
+{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+.start
+{
+    left: -165px;
+    position: absolute;
+}
+.ended
+{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
